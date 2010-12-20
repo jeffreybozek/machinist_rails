@@ -1,6 +1,6 @@
 = machinist_rails
 
-Description goes here.
+Inspired by factory_girl_rails. Machinist_rails enables auto-loading of macros, matchers, and blueprints in spec/support/ and its subdirectories. This allows for easy access to blueprints, etc.. in the console. This also sets machinist as the fixture_replacement for your rails generators.
 
 == Contributing to machinist_rails
  
