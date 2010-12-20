@@ -15,14 +15,17 @@ Jeweler::Tasks.new do |gem|
   gem.name = "machinist_rails"
   gem.homepage = "http://github.com/jeffbozek/machinist_rails"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Simple railtie integration of machinist to rails 3.}
+  gem.description = %Q{Inspired by factory_girl_rails. Machinist_rails enables auto-loading of macros, matchers, and blueprints in spec/support/ and its subdirectories. This allows for easy access to blueprints, etc.. in the console. This also sets machinist as the fixture_replacement for your rails generators.}
   gem.email = "jeff.bozek@gmail.com"
   gem.authors = ["Jeff Bozek"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
   #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
   #  gem.add_development_dependency 'rspec', '> 1.2.3'
+  gem.add_runtime_dependency 'machinist', '>= 2.0.0.beta2'
+  gem.add_runtime_dependency 'railties', '>= 3.0.0'
+  gem.files = Dir.glob('lib/**/*.rb')
 end
 Jeweler::RubygemsDotOrgTasks.new
 
